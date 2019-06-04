@@ -61,7 +61,7 @@
           :class="{'is-selected': currentImageIndex == index}">
       </div>
 
-      <div class="content-v-img">
+      <div class="content-v-img" style="width: 100vw; height: 100vh;">
         <v-zoomer style="width: 500px; height: 500px; border: solid 1px silver;">
           <img :src="images[currentImageIndex]" @click="next" style="object-fit: contain; width: 100%; height: 100%;">
         </v-zoomer>
