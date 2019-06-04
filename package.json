@@ -27,7 +27,9 @@
     "dist"
   ],
   "homepage": "https://github.com/crowdbotics/v-img",
-  "dependencies": {},
+  "dependencies": {
+    "vue-zoomer": "github:jarvisniu/vue-zoomer"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-plugin-external-helpers": "^6.22.0",
