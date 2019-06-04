@@ -62,9 +62,9 @@
       </div>
 
       <div class="content-v-img" style="width: 100vw; height: 100vh;">
-        <v-zoomer style="border: solid 1px silver;">
+        <vue-zoomer style="border: solid 1px silver;height: 100%;">
           <img :src="images[currentImageIndex]" @click="next" style="object-fit: contain; width: 100%; height: 100%;">
-        </v-zoomer>
+        </vue-zoomer>
       </div>
 
     </div>
@@ -72,13 +72,11 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import VueZoomer from 'vue-zoomer'
 import 'vue-zoomer/dist/vue-zoomer.css'
 
-Vue.use(VueZoomer)
-    
 export default {
+  components:{VueZoomer},
   data() {
     return {
       images: [],
